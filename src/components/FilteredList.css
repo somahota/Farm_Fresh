@@ -1,0 +1,71 @@
+
+#toolbar {
+  padding: 0px;
+  text-align:center;
+  background-color: #FFFFFF;
+  margin-top:100px;
+  margin-bottom:-100px;
+}
+
+#reset {
+  width: 75px;
+  border-width: 1px;
+  font-size: 15px;
+}
+#nutrientsDropdown{
+  width:70px;
+  height: 20px;
+}
+#typeDropdown{
+  width:70px;
+  height: 20px;
+}
+
+#sortDrop{
+  width:90px;
+  height: 20px;
+}
+
+
+#prodList {
+  text-align:center;
+}
+
+#searchDiv {
+  margin-top: 30px;
+  margin-right: 70px;
+  float: right;
+}
+
+#searchBar {
+  height:30px;
+  width: 280px;
+  margin-top: 0px;
+  border-radius: 3px;
+  border-width: 1px;
+  padding:10px;
+  border-color: #69C3D1;
+  color: black;
+}
+
+.dropDiv {
+  display: inline-block;
+}
+
+.dropDown {
+  background-color: #006400;
+  color: white;
+  display: inline-block;
+  width: 100px;
+  height: 25px;
+  margin:0px;
+  margin-top: 0px;
+  font-size: 15px;
+  padding: 0px;
+}
+.dropLabel {
+   display: inline-block;
+  margin: 5px;
+  font-size: 15px;
+  color: #000000;
+}
