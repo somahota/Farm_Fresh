@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+//Fromat of each product card
 const LoadingProduct = () => {
   return (
     <div className="product loading">
