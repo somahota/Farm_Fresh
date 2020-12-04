@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
+//This class takes care of the increment and decrement functionality
 class Counter extends Component {
   constructor(props) {
     super(props);
