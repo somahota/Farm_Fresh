@@ -134,7 +134,7 @@ class Header extends Component {
           <div className="brand">
             <img
               className="logo"
-              src="https://res.cloudinary.com/soma/image/upload/v1606254312/logo_zv2dh8.png"
+              src="https://res.cloudinary.com/soma/image/upload/v1607093318/logo_nlbcd1.png"
               alt="Farm Fresh Logo"
             />
           </div>
