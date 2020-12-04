@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+//When the user clicks on the empty cart, it displays an empty cart image
 const EmptyCart = props => {
   return (
     <div className="empty-cart">
