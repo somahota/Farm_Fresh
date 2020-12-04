@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import Dropdown from 'react-bootstrap/Dropdown';
@@ -9,30 +10,34 @@ import LoadingProducts from "../loaders/Products";
 import NoResults from "../empty-states/NoResults";
 import CSSTransitionGroup from "react-transition-group/CSSTransitionGroup";
 
+
+
+/*This class defines most of the html layout for the page and handles the functionalities of 
+key features like filtering and sorting the list of products and displaying them on
+screen.
+*/
 class FilteredList extends Component {
   constructor(props) {
     super(props);
    //default values
-    this.state = {
-      search: '',
-      type: 'All',
+    this.state = {      type: 'All',
       nutrients: 'None',
       sort: 'None',
-	  //term: this.props.searchTerm
     };
   }
   
-
+//Sets the state of the "type" state depending on what the user selects
   onTypeFilter = (event) => {
 	  this.state.type = event.state.type;
   }
 
+//Sets the state of the "nutrients" state depending on what the user selects
   onFiberFilter = (event) => {
       this.state.nutrients = event.state.nutrients;
   }
 
 
- 
+ //function to filter the 'type' state and the 'nutrients' state depending on what the suer selects
   filterProd = (item) => {
 	  var isGood = true;
 	  
@@ -54,7 +59,7 @@ class FilteredList extends Component {
 	return isGood;
   }
 
-
+//functionality to sort by price
   sortByPrice = (prod1, prod2) => {
     const difference = prod1.price - prod2.price;
 
@@ -71,20 +76,30 @@ class FilteredList extends Component {
   }
   }
 
-
+  /*
+  When a 'type' filter is selected, this function sets the current state to the
+  selected type.
+  */
   onSelectFilterType = (eventKey) => {
       this.setState({
         type: eventKey.target.value
       });
   }
-
+  
+    /*
+  When a 'nutrients' filter is selected, this function sets the current state to the
+  selected nutrients.
+  */
   onSelectFilterNutrients = (eventKey) => {
       this.setState({
         nutrients: eventKey.target.value
       });
   }
 
-
+  /*
+  When a sort filter is selected, this function sets the current state to the
+  selected sort option.
+  */
   sortOnSelected = (eventKey) => {
     
       this.setState({
@@ -92,7 +107,7 @@ class FilteredList extends Component {
       });
   }
 
-
+//resets the state values to default.
   resetOnClick = (e) => {
     this.setState({
       nutrients: 'None',
@@ -113,6 +128,8 @@ class FilteredList extends Component {
         return x.name.toLowerCase().includes(term.toLowerCase()) || !term;
       };
     }
+	
+	//apply filtering on productsData and display the products
 	  productsData = this.props.items
       .filter(searchingFor(term))
 		  .filter(this.filterProd).sort((prod1, prod2) => this.sortByPrice(prod1, prod2))
@@ -153,7 +170,7 @@ class FilteredList extends Component {
     }
 	return (<div>
 	
-   
+				//Toolbar that contains the 3 filters and the the reset button
 			   <div id="toolbar">
               <Button className="dropDown" id="reset" onClick={this.resetOnClick}> Reset </Button>
 
@@ -181,28 +198,12 @@ class FilteredList extends Component {
                <option value ="High to Low" >High to Low</option>
 			  </select>
 	    </div>  
-  //      <div className = "filter-list">
-  
+		
+		//display all the products
 		<div className="products-wrapper">{view}</div>
 
 	  </div>
 	  </div>
-			 
-			/*  <h3 className="dropLabel" onSelect={this.onSelectFilterNutrients}> Nutrients: </h3>
-			   <DropdownButton className="dropDown" id="nutrientsDropdown" title={this.state.nutrients} >
-                <Dropdown.Item eventKey="Fiber" >Fiber</Dropdown.Item>
-                <Dropdown.Item eventKey="Good Fats" >Good Fats</Dropdown.Item>
-				<Dropdown.Item eventKey="Vitamins" >Vitamins</Dropdown.Item>
-				<Dropdown.Item eventKey="Carbs" >Carbs</Dropdown.Item>
-            </DropdownButton>
-			
-			<h3 className="dropLabel"> Sort By Price: </h3>
-			<DropdownButton id="sortDrop" className="dropDown" title={this.state.sort}>
-              <Dropdown.Item eventKey="Price (Low to High)" >Price (Low to High)</Dropdown.Item>
-              <Dropdown.Item eventKey="Price (High to Low)" >Price (High to Low)</Dropdown.Item>
-          </DropdownButton> */
-		  
-	  	
     );
 	
 
