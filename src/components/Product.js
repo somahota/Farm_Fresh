@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Counter from "./Counter";
 
+
+//Displays a product card
 class Product extends Component {
   constructor(props) {
     super(props);
