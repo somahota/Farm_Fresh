@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { findDOMNode } from "react-dom";
 
-//This class provides the Quick View functionality which pops up a modal displaying the product image,name, and price
+//This class provides the Quick View functionality that pops up a modal displaying the product image,name, and price
 class QuickView extends Component {
   constructor(props) {
     super(props);
