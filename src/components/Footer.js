@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+//displays the footer of the website
 const Footer = props => {
   return (
     <footer>
