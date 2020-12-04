@@ -12,7 +12,8 @@ import Button from 'react-bootstrap/Button';
 import FilteredList from './FilteredList';
 
 
-//This class defines most of the html layout for the logo, the search bar, and the cart, and handles their functionalities 
+/*This class defines most of the html layout for the logo, the search bar, and the cart, and handles their functionalities 
+*/
 class Header extends Component {
   constructor(props) {
     super(props);
@@ -40,18 +41,9 @@ class Header extends Component {
       mobileSearch: true
     });
   }
-  handleSearchNav(e) {
-    e.preventDefault();
-    this.setState(
-      {
-        mobileSearch: false
-      },
-      function() {
-        this.refs.searchBox.value = "";
-        this.props.handleMobileSearch();
-      }
-    );
-  }
+
+  
+  //when user clicks on the cart and the cart box is open, the cart box will close if the user clicks anywhere on the webpage
   handleClickOutside(event) {
     const cartNode = findDOMNode(this.refs.cartPreview);
     const buttonNode = findDOMNode(this.refs.cartButton);
@@ -82,8 +74,6 @@ class Header extends Component {
 
   render() {
 	 
-      
-
       {
 
     let cartItems;
@@ -156,16 +146,7 @@ class Header extends Component {
                 this.state.mobileSearch ? "search-form active" : "search-form"
               }
             >
-              <a
-                className="back-button"
-                href="#"
-                onClick={this.handleSearchNav.bind(this)}
-              >
-                <img
-                  src="https://res.cloudinary.com/soma/image/upload/v1606080717/back_u2j2ve.png" 
-                  alt="back"
-                />
-              </a>
+             
               <input
                 type="search"
                 ref="searchBox"
