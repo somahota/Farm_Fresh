@@ -4,9 +4,6 @@ import Counter from "./Counter";
 import EmptyCart from "../empty-states/EmptyCart";
 import CSSTransitionGroup from "react-transition-group/CSSTransitionGroup";
 import { findDOMNode } from "react-dom";
-//import ReactBootstrap,{ DropdownButton, Button, MenuItem } from 'react-bootstrap';
-//import ReactBootstrap,{Button, DropdownButton} from 'react-bootstrap';
-//import ReactBootstrap,{Nav, Navbar, NavDropdown, MenuItem,  Tabs, ButtonToolbar, Button, Table, ButtonGroup, Row, Col, Grid, Panel, FormGroup, FormControl} from 'react-bootstrap';
 import List from './List';
 import './FilteredList.css';
 import DropdownButton from 'react-bootstrap/DropdownButton';
@@ -14,6 +11,8 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import Button from 'react-bootstrap/Button';
 import FilteredList from './FilteredList';
 
+
+//This class defines most of the html layout for the logo, the search bar, and the cart, and handles their functionalities 
 class Header extends Component {
   constructor(props) {
     super(props);
