@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+//When the user search for a product that isn't available.
 const NoResults = () => {
   return (
     <div className="products">
