@@ -1,6 +1,10 @@
 import React, {Component} from 'react';
 import Product from "./Product.js";
 
+/*
+The List class maps a list of key value pairs, representing each product info, to the Product render, which displays it in the
+format designated by the Product class.
+*/
 
 class List extends Component {
   renderList() {
