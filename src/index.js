@@ -1,9 +1,7 @@
-//import 'bootstrap/dist/css/bootstrap.min.css';  
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import Header from "./components/Header";
 import Product from "./components/Product";
-//import Products from "./components/Products";
 import Footer from "./components/Footer";
 import QuickView from "./components/QuickView";
 import FilteredList from './components/FilteredList';
@@ -320,7 +318,7 @@ class App extends Component {
   handleSearch(event) {
     this.setState({ term: event.target.value });
   }
-  // Mobile Search Reset
+  // Search Reset
   handleMobileSearch() {
     this.setState({ term: "" });
   }
@@ -329,7 +327,7 @@ class App extends Component {
     this.setState({ type: event.target.value });
     console.log(this.state.type);
   }
-  
+     // Filter by Nutrients
     handleNutrients(event) {
     this.setState({ nutrients: event.target.value });
     console.log(this.state.nutrients);
@@ -411,7 +409,7 @@ class App extends Component {
       quantity: qty
     });
   }
-  // Open Modal
+  // Open Modal for Quick View
   openModal(product) {
     this.setState({
       quickViewProduct: product,
@@ -428,31 +426,35 @@ class App extends Component {
   render() {
     return (
       <div className="container">
+	  
+	  //Displays the header content containing the search bar and the cart along with their functionalities
         <Header
           cartBounce={this.state.cartBounce}
           total={this.state.totalAmount}
           totalItems={this.state.totalItems}
           cartItems={this.state.cart}
           removeProduct={this.handleRemoveProduct}
-          handleSearch={this.handleSearch}
           handleMobileSearch={this.handleMobileSearch}
-//          handleType={this.handleType}
-//		  handleNutrients = {this.handleNutrients}
           typeTerm={this.state.type}
           updateQuantity={this.updateQuantity}
           productQuantity={this.state.moq}
         />
+		
+	 //Displays the toolbar containing the 3 filters and 1 reset buttons along with their functionalities and displays the product card
 		<FilteredList items={products}
 		  handleType={this.handleType}
 		  handleNutrients = {this.handleNutrients}
-        //  productsList={this.state.products}
           searchTerm={this.state.term}
           addToCart={this.handleAddToCart}
           productQuantity={this.state.quantity}
           updateQuantity={this.updateQuantity}
           openModal={this.openModal}
         />
+		
+		//Displays the footer content
         <Footer />
+		
+		//Loads the quick view functionality
         <QuickView
           product={this.state.quickViewProduct}
           openModal={this.state.modalActive}
@@ -472,6 +474,7 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
+
 
 
 
