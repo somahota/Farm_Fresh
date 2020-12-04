@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Product from "./Product";
 
+//Format to load the products
 class LoadingProducts extends Component {
   render() {
     return (
