@@ -4,18 +4,20 @@ An online grocery shopping application that caters to users' dietary needs while
 <h2> Website Screenshot </h2>
 <img src="https://res.cloudinary.com/soma/image/upload/v1607123353/ss_odfi1w.png" alt = "Farm Fresh Screenshot">
 
+<p> </p>
 
-# How to run”
-''
-1.  Clone or download this repository
-2.  Open your terminal and cd into the folder of this repository.
-3. Run npm install 
-4. Run npm update
-5. Run npm start
-6. The website will open in a localhost browser.
-''
+<h2> <strong> How to Run </strong> </h2>
+<ol>
+  <li>  Clone or download this repository. </li>
+<li> Open your terminal and cd into the folder of this repository. </li>
+<li> Run npm install </li>
+<li> Run npm update </li>
+<li> Run npm start </li>
+<li> The website will open in a localhost browser. </li>
+</ol>
 
-# Architecture"
+<p> </p>
+<h2> Architecture </h2>
 
 <img src="https://res.cloudinary.com/soma/image/upload/v1607126040/arch_zhd77v.png" alt = "Architecture">
 
