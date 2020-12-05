@@ -1,7 +1,8 @@
 # Farm Fresh
 An online grocery shopping application that caters to users' dietary needs while focussing on quick shopping.
 
-<img src="https://res.cloudinary.com/soma/image/upload/v1607126040/arch_zhd77v.png" alt = "Architecture">
+<h2> Website Screenshot </h2>
+<img src="https://res.cloudinary.com/soma/image/upload/v1607123353/ss_odfi1w.png" alt = "Farm Fresh Screenshot">
 
 
 # How to run”
@@ -16,7 +17,7 @@ An online grocery shopping application that caters to users' dietary needs while
 
 # Architecture"
 
-![Architecture] (https://res.cloudinary.com/soma/image/upload/v1607126040/arch_zhd77v.png)
+<img src="https://res.cloudinary.com/soma/image/upload/v1607126040/arch_zhd77v.png" alt = "Architecture">
 
 
 
