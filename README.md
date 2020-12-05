@@ -19,7 +19,7 @@ An online grocery shopping application that caters to users' dietary needs while
 <p> </p>
 <h2> Architecture </h2>
 
-<img src="https://res.cloudinary.com/soma/image/upload/v1607127324/arch_ieuvmt.png" width = "100" alt = "Architecture">
+<img src="https://res.cloudinary.com/soma/image/upload/v1607127324/arch_ieuvmt.png" width = "800" alt = "Architecture">
 
 
 
