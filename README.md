@@ -33,5 +33,12 @@ When the user clicks on 'Add to Cart', a change in state is triggered and the pr
 When the user hovers over the product and clicks on the zoom icon, the product image,name, and the price state are passed and displayed on the model.
 
 
+<h2> Packages used </h2>
+
+<ul>
+  <li> react-dom</li>
+  <li> react-transition-group/CSSTransitionGroup </li>
+  <li> react-bootstrap </li>
+  </ul>
 
 
