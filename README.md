@@ -1,7 +1,7 @@
 # Farm_Fresh
 An online grocery shopping application that caters to users' dietary needs,also focussing on quick shopping.
 
-<img src=”ss.png” alt = "Architecture">
+<img src=”arch.png” alt = "Architecture">
 
 
 # How to run”
