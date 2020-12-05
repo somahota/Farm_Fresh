@@ -1,7 +1,7 @@
 # Farm_Fresh
 An online grocery shopping application that caters to users' dietary needs,also focussing on quick shopping.
 
-<img src=”https://res.cloudinary.com/soma/image/upload/v1607123353/ss_odfi1w.png” alt = "Architecture">
+<img src=”ss.png” alt = "Architecture">
 
 
 # How to run”
