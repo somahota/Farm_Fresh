@@ -2,7 +2,7 @@
 An online grocery shopping application that caters to users' dietary needs while focussing on quick shopping.
 
 <h2> Website Screenshot </h2>
-<img src="https://res.cloudinary.com/soma/image/upload/v1607123353/ss_odfi1w.png" border= 5px solid black width = "800" alt = "Farm Fresh Screenshot">
+<img src="https://res.cloudinary.com/soma/image/upload/v1607149419/ss_x3njkd.png" = width = "800" alt = "Farm Fresh Screenshot">
 
 <p> </p>
 
@@ -19,7 +19,7 @@ An online grocery shopping application that caters to users' dietary needs while
 <p> </p>
 <h2> <strong> <u>Architecture </strong> </u></h2>
 
-<img src="https://res.cloudinary.com/soma/image/upload/v1607127324/arch_ieuvmt.png" width = "800" alt = "Architecture">
+<img src="https://res.cloudinary.com/soma/image/upload/v1607149399/arch_fbwmyh.png" width = "800" alt = "Architecture">
 
 <p> </p>
 
