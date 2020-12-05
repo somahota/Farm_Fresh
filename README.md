@@ -21,5 +21,17 @@ An online grocery shopping application that caters to users' dietary needs while
 
 <img src="https://res.cloudinary.com/soma/image/upload/v1607127324/arch_ieuvmt.png" width = "800" alt = "Architecture">
 
+<p> </p>
+
+<h2> Data </h2>
+
+Each product begins as a list of key-value pairs in index.js, which is passed to the Header to be filtered in the search bar and to update the cart and to the FilteredList to be filtered according to the current filter state and sort state as set by the dropdowns of the toolbar.
+Then, the products are passed to the List component, that maps the list of key value pairs to the Product Component.
+When a selection from a drop down button is made, a change in state is triggered and the list of products is appropriately filtered by the current state's filter and sort properties.
+When the user increments or decrements the product quantity through the - and + button, a change in state is triggered and the quantity of product is updated.
+When the user clicks on 'Add to Cart', a change in state is triggered and the product quantity and price is updated on the cart. Additionally, the Add to Cart button changes color for a few seconds (CSSTransition) and the Cart buzzes to denote that something has been added.
+When the user hovers over the product and clicks on the zoom icon, the product image,name, and the price state are passed and displayed on the model.
+
+
 
 
