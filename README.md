@@ -1,7 +1,8 @@
-# Farm_Fresh
-An online grocery shopping application that caters to users' dietary needs,also focussing on quick shopping.
+# Farm Fresh
+An online grocery shopping application that caters to users' dietary needs while focussing on quick shopping.
 
 <img src=”arch.png” alt = "Architecture">
+![alt text](https://github.com/somahota/Farm_Fresh/blob/master/arch.png?raw=true)
 
 
 # How to run”
@@ -14,7 +15,7 @@ An online grocery shopping application that caters to users' dietary needs,also 
 6. The website will open in a localhost browser.
 ''
 
-"Architecture"
+# Architecture"
 
 ![Architecture] (https://res.cloudinary.com/soma/image/upload/v1607126040/arch_zhd77v.png)
 
