@@ -2,7 +2,7 @@
 An online grocery shopping application that caters to users' dietary needs while focussing on quick shopping.
 
 <h2> Website Screenshot </h2>
-<img src="https://res.cloudinary.com/soma/image/upload/v1607123353/ss_odfi1w.png" style ="border: 10px solid black;" width = "800" alt = "Farm Fresh Screenshot">
+<img src="https://res.cloudinary.com/soma/image/upload/v1607123353/ss_odfi1w.png" style ="border: 5px solid black" width = "800" alt = "Farm Fresh Screenshot">
 
 <p> </p>
 
